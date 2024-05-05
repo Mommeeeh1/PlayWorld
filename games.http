@@ -1,0 +1,30 @@
+GET http://localhost:5066/games
+
+### 
+GET http://localhost:5066/games/2
+
+###
+POST http://localhost:5066/games/
+Content-Type: application/json
+
+{
+    
+    "name": "Dragonball",
+    "genreId": 2,
+    "price": 50.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5066/games/2
+Content-Type: application/json
+
+{
+    "name": "Naruto",
+    "genreId": "1",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+DELETE http://localhost:5066/games/1
